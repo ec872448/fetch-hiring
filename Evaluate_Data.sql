@@ -2,7 +2,8 @@
 
 SELECT *
 FROM Users
-WHERE role is null 
+WHERE 
+    role is null 
 ---------------------------
 SELECT *
 FROM Receipts
