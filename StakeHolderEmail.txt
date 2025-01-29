@@ -1,0 +1,32 @@
+Subject: A Few Questions About Data Gaps & Next Steps
+
+Hey Stakeholder,
+
+I’ve been digging into the data, and a few things stood out that might impact our analysis. Wanted to check in with you to see if these are expected or if we need to adjust how we handle them.
+
+A Few Things We Noticed:
+Missing Product Categories in Receipts
+
+Some receipts don’t have a category listed for purchased items. Is that normal, or should we be pulling this info from somewhere else?
+Missing Purchase Dates & Total Spend on Some Receipts
+
+We’re seeing some receipts where PurchaseDate and/or TotalSpent are NULL. Could these be incomplete records, or do they get updated later? If they stay missing, how should we treat them?
+How Do Receipts Connect to Brands?
+
+Right now, we don’t see a direct way to link receipts to brands, which makes it tricky to analyze brand performance. Are we missing a linking table (like ReceiptItems or Transactions), or is that data just not available?
+How We Found These:
+Ran SQL checks for missing values and inconsistencies.
+Looked for a way to connect receipts to brands and couldn’t find one.
+Noticed some receipts had no purchase date or spend amount, which might mean they’re incomplete.
+What We Need to Figure Out:
+Is there a missing table for linking receipts to brands?
+Should we filter out or estimate missing PurchaseDate and TotalSpent values?
+Are missing product categories expected, or should we be assigning them another way?
+Other Considerations:
+If we’re missing key links, we might not be able to accurately track brand performance.
+As the dataset grows, missing fields could make queries slower or mess with reporting.
+If we need workarounds, should we agree on some rules for handling missing data?
+Would love to get your thoughts on this—let me know when you have a few minutes to chat. Thanks!
+
+Best,
+Edgar Cardenas
