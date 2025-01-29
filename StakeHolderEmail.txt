@@ -1,6 +1,6 @@
 Subject: A Few Questions About Data Gaps & Next Steps
 
-Hey Stakeholder,
+Hi Stakeholder,
 
 I’ve been digging into the data, and a few things stood out that might impact our analysis. Wanted to check in with you to see if these are expected or if we need to adjust how we handle them.
 
