@@ -49,6 +49,6 @@ for key in input_files:
     with open(output_files[key], "w", encoding="utf-8") as file:
         json.dump(cleaned_json, file, indent=4)
 
-    print(f"✅ Fixed {input_files[key]} → {output_files[key]}")
+    print(f"Fixed {input_files[key]} → {output_files[key]}")
 
-print("🎉 JSON cleaning complete! Now you can import into SQL Server.")
+print(" JSON cleaning complete! Now you can import into SQL Server.")
